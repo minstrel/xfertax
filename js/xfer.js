@@ -1,9 +1,9 @@
 var calculatexfertax = function (date, saleprice) {
   if ( (date.isValid() == false) || (date < moment('1932-06-21')) ) {
-    $('#tax2').html('Enter a valid date, numbnuts.');
+    $('#tax2').html('Enter a valid date, gosh!');
   }
   else if (isNaN(saleprice) || (saleprice == 0) || (saleprice < 0)) {
-    $('#tax2').html('Enter a sale price, fool!');
+    $('#tax2').html('Enter a valid sale price, fool!');
   }
   else if ( (date >= moment('1932-06-21')) && (date <= moment('1940-06-30')) ) {
     var tax = Math.ceil(saleprice * .001);
